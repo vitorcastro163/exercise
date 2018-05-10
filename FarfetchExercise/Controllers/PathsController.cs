@@ -24,13 +24,13 @@ namespace FarfetchExercise.Controllers
 
         // GET: Routes
         [HttpGet]
-        public async Task<IActionResult> GetAllAsync(string startNode, string endNode)
+        public async Task<IActionResult> GetAllAsync(string startPoint, string endPoint)
         {
-            if(startNode == null || endNode == null)
+            if(startPoint == null || endPoint == null)
             {
                 return NotFound();
             }
-            List<Path> paths = await _service.FindPathsBetweenNodes("A", "B");
+            List<Path> paths = await _service.FindPathsBetweenNodes(startPoint, endPoint);
             return Ok(paths);
         }
 

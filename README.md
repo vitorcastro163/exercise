@@ -1,6 +1,6 @@
-# ReadMe
+# README
 The exercise selected was the DeliveryService.
-Pdf with it's description can be found inside the repository.
+The statement can be found inside the repository in a pdf format.
 
 # Usage
 ## Users
@@ -11,6 +11,7 @@ Both of their passwords are **Pass123.**
 
 ## Access to data
 The Points and Routes can be seed when the server is running, via the browser. Only an Admin can create, update or delete either Points or Routes.
+Both of these have been seeded with the information from the exercise statement.
 
 The Paths are returned via a Get request, to the endpoint **/api/Paths?startPoint=[name of the point]&endPoint=[name of the point]**
 E.g.: /api/Paths?startPoint=A&endPoint=B
